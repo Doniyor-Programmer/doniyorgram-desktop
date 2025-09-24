@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "doniyorgram-desktop"
+version = "0.1.0"
+description = "Privacy-focused messaging platform with end-to-end encryption"
+readme = "README.md"
+authors = [{ name = "Doniyorgram" }]
+requires-python = ">=3.10"
+dependencies = [
+    "cryptography>=42.0.0",
+    "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[project.urls]
+Homepage = "https://example.com/doniyorgram"
+
